@@ -3,7 +3,7 @@ import Offers from "../ui/offers";
 
 export default function Page() {
   return (
-    <div className="flex">
+    <div className="flex py-16">
       <div className="w-1/5 flex justify-center items-center p-8">
         Side Filters
       </div>
