@@ -1,0 +1,90 @@
+const offers = [
+  {
+    id: 1544845214,
+    image_url:
+      "https://imagehandler.autoonline.com/ImageHttpHandler.ashx?ObjectID=1202312103845258&ImageID=351337063",
+    location: "Nienstadt",
+    distance: 208,
+    offer_name: "VW GOLF VARIANT 1.6 TDI",
+    power: 85,
+    odometer: 187014,
+    type: "Diesel",
+    repair_estimate: 14455,
+    replacement_value: 15000,
+    bidValue: 0,
+  },
+  {
+    id: 1544845254,
+    image_url:
+      "https://imagehandler.autoonline.com/ImageHttpHandler.ashx?ObjectID=1202312123850766&ImageID=351461217",
+    location: "Augsberg",
+    distance: 1105,
+    offer_name: "AUDI A4 2.0 8E-AUDI A4",
+    power: 84,
+    odometer: 584157,
+    type: "Petrol",
+    repair_estimate: 3321547,
+    replacement_value: 11846,
+    bidValue: 0,
+  },
+  {
+    id: 1544845741,
+    image_url:
+      "https://imagehandler.autoonline.com/ImageHttpHandler.ashx?ObjectID=1202312123850766&ImageID=351461220",
+    location: "Nurnberg",
+    distance: 211,
+    offer_name: "RENAULT MEGANE GRANDTOUR ENERGY",
+    power: 96,
+    odometer: 25478,
+    type: "Electric",
+    repair_estimate: 115448,
+    replacement_value: 452154,
+    bidValue: 0,
+  },
+  {
+    id: 1544845965,
+    image_url:
+      "https://imagehandler.autoonline.com/ImageHttpHandler.ashx?ObjectID=1202312113850726&ImageID=351460167",
+    location: "Panker",
+    distance: 1547,
+    offer_name: "HONDA JAZZ 1.5 I-MMD HYBRID",
+    power: 91,
+    odometer: 54188,
+    type: "Hybrid",
+    repair_estimate: 665541,
+    replacement_value: 322154,
+    bidValue: 0,
+  },
+  {
+    id: 1544845114,
+    image_url:
+      "https://imagehandler.autoonline.com/ImageHttpHandler.ashx?ObjectID=1202312113850654&ImageID=351458773",
+    location: "Beselich",
+    distance: 1125,
+    offer_name: "CITROEN DS5 BLUEHDI 180",
+    power: 79,
+    odometer: 144578,
+    type: "Diesel",
+    repair_estimate: 115448,
+    replacement_value: 445115,
+    bidValue: 0,
+  },
+  {
+    id: 1544845175,
+    image_url:
+      "https://imagehandler.autoonline.com/ImageHttpHandler.ashx?ObjectID=1202312113850654&ImageID=351458776",
+    location: "Freising",
+    distance: 955,
+    offer_name: "DAIMLER GLK 220 CDI 4MATIC",
+    power: 86,
+    odometer: 211458,
+    type: "Petrol",
+    repair_estimate: 994445,
+    replacement_value: 111444,
+    bidValue: 0,
+  },
+];
+
+module.exports = {
+  offers,
+};
