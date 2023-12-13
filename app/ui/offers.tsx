@@ -1,9 +1,10 @@
 import React from "react";
 import Offer from "./offer";
-import { getOffers } from "_/app/lib/data";
+import { getOffers, getOffersBidData } from "_/app/lib/data";
 
 export default async function Offers() {
   const offers = await getOffers();
+  const offersBidData = await getOffersBidData();
 
   return (
     <div className="flex flex-wrap gap-8">
@@ -21,7 +22,10 @@ export default async function Offers() {
             type={offer.type}
             repair_estimate={offer.repair_estimate}
             replacement_value={offer.replacement_value}
-            bidValue={offer.bidValue}
+            bidvalue={
+              offersBidData.filter((offerbid) => offerbid.id === offer.id)[0]
+                .bidvalue ?? 0
+            }
           />
         );
       })}

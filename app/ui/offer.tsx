@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import OfferBid from "./offerbid";
 
 export default function Offer({
   id,
@@ -12,7 +13,7 @@ export default function Offer({
   type,
   repair_estimate,
   replacement_value,
-  bidValue,
+  bidvalue,
 }: {
   id: number;
   image_url: string;
@@ -24,38 +25,33 @@ export default function Offer({
   type: string;
   repair_estimate: number;
   replacement_value: number;
-  bidValue: number;
+  bidvalue: number;
 }) {
   return (
     <div>
       <Image
         src={image_url}
-        width={335}
+        width={355}
         height={250}
         alt="Picture"
         className="border rounded-t-xl"
       />
-      <form>
-        <div className="flex flex-col border rounded-b-xl gap-4 pb-4 p-2">
-          <span>
-            {location} | {distance} Km
-          </span>
-          <span>{offer_name}</span>
-          <span>
-            {power} kW . {odometer} km . {type} . ID:{id.toString().slice(0, 6)}
-          </span>
-          <span>
-            RE: {repair_estimate} E . RV: {replacement_value} E
-          </span>
-          <input
-            type="number"
-            id="bid_amount"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Bid"
-            required
-          />
-        </div>
-      </form>
+      <div className="flex flex-col border rounded-b-xl gap-4 pb-4 p-2 bg-gray-50">
+        <span>
+          {location} | {distance} Km
+        </span>
+        <span>{offer_name}</span>
+        <span>
+          {power} kW . {odometer} km . {type} . ID:{id.toString().slice(4)}
+        </span>
+        <span>
+          RE: {repair_estimate} E . RV: {replacement_value} E
+        </span>
+        <OfferBid
+          offerId={id}
+          bidvalue={bidvalue}
+        />
+      </div>
     </div>
   );
 }

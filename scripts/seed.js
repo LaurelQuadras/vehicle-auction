@@ -15,7 +15,7 @@ async function seedOffers(client) {
         type VARCHAR(255) NOT NULL,
         repair_estimate INT NOT NULL,
         replacement_value INT NOT NULL,
-        bidValue INT NOT NULL
+        bidvalue INT NOT NULL
       );
     `;
 
@@ -24,8 +24,8 @@ async function seedOffers(client) {
     const insertedOffers = await Promise.all(
       offers.map(
         (offer) => client.sql`
-        INSERT INTO offers (id, image_url, location, distance, offer_name, power, odometer, type, repair_estimate, replacement_value, bidValue)
-        VALUES (${offer.id}, ${offer.image_url}, ${offer.location}, ${offer.distance}, ${offer.offer_name}, ${offer.power}, ${offer.odometer}, ${offer.type}, ${offer.repair_estimate}, ${offer.replacement_value}, ${offer.bidValue})
+        INSERT INTO offers (id, image_url, location, distance, offer_name, power, odometer, type, repair_estimate, replacement_value, bidvalue)
+        VALUES (${offer.id}, ${offer.image_url}, ${offer.location}, ${offer.distance}, ${offer.offer_name}, ${offer.power}, ${offer.odometer}, ${offer.type}, ${offer.repair_estimate}, ${offer.replacement_value}, ${offer.bidvalue})
         ON CONFLICT (id) DO NOTHING;
       `)
     );

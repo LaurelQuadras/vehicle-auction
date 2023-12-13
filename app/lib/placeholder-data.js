@@ -11,7 +11,7 @@ const offers = [
     type: "Diesel",
     repair_estimate: 14455,
     replacement_value: 15000,
-    bidValue: 0,
+    bidvalue: 300,
   },
   {
     id: 1544845254,
@@ -25,7 +25,7 @@ const offers = [
     type: "Petrol",
     repair_estimate: 3321547,
     replacement_value: 11846,
-    bidValue: 0,
+    bidvalue: 10,
   },
   {
     id: 1544845741,
@@ -39,7 +39,7 @@ const offers = [
     type: "Electric",
     repair_estimate: 115448,
     replacement_value: 452154,
-    bidValue: 0,
+    bidvalue: 10,
   },
   {
     id: 1544845965,
@@ -53,7 +53,7 @@ const offers = [
     type: "Hybrid",
     repair_estimate: 665541,
     replacement_value: 322154,
-    bidValue: 0,
+    bidvalue: 10,
   },
   {
     id: 1544845114,
@@ -67,7 +67,7 @@ const offers = [
     type: "Diesel",
     repair_estimate: 115448,
     replacement_value: 445115,
-    bidValue: 0,
+    bidvalue: 10,
   },
   {
     id: 1544845175,
@@ -81,7 +81,7 @@ const offers = [
     type: "Petrol",
     repair_estimate: 994445,
     replacement_value: 111444,
-    bidValue: 0,
+    bidvalue: 10,
   },
 ];
 
