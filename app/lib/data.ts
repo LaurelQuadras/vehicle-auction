@@ -3,6 +3,7 @@
 import { sql } from "@vercel/postgres";
 
 export async function getOffers() {
+  console.log("Came here");
   try {
     const data = await sql`SELECT * FROM offers`;
     return data.rows;
